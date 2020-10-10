@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "shlop";
+  src: local("shlop"),
+    url(./fonts/shloprg.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: shlop;
+}
