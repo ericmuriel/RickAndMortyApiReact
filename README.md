@@ -6,8 +6,7 @@ https://rickandmortyapi.com/ .
 He instalado node_modules:
 npm install -g node-modules
 
-He instalado React Router para poder enrutar la web.
-react.router:
+He instalado react-Router para poder enrutar la web
 npm install --save react-router
 
 Cuando clonas el respositorio, primero necesitas hacer npm install y después npm start .
