@@ -10,6 +10,7 @@ const Characters = ({ match }) => {
   const baseUrl = "https://rickandmortyapi.com/api/character/";
 
   useEffect(() => {
+
     const fetchData = async () => {
       const dataCharacters = await fetch(
         page === 1 ? baseUrl : baseUrl + "?page=" + page
@@ -21,24 +22,29 @@ const Characters = ({ match }) => {
     fetchData();
   }, [page]);
 
+  useEffect(()=>{
+window.scrollTo(0,0)
+  },[match])
+
+
   return (
-    <div className="backgroundPage">
+    <div className="background-Page">
       {characters ?
         <>
-          <h1 className="characterTitle">Characters</h1>
+          <h1 className="character-Title">Characters</h1>
           <ul className="info-container">
             {characters?.map(character => <Character key={character.id} character={character} />)}
           </ul>
         </> : "Page not found"
       }
-      <div className="pagesContainer">
+      <div className="pages-Container">
       {page >= 2 && 2 < maxPages && (
-        <NavLink className="previousPage" to={"/" + (page - 1)} exact>
+        <NavLink className="previous-Page" to={"/" + (page - 1)} exact>
           Previous Page
         </NavLink>
       )}
       {page < maxPages && (
-        <NavLink className="nextPage" to={"/" + (page + 1)} exact>
+        <NavLink className="next-Page" to={"/" + (page + 1)} exact>
           Next Page
         </NavLink>
         )}

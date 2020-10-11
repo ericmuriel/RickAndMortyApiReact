@@ -19,10 +19,9 @@ font-size: 30px;
   text-shadow: 4px 4px 14px white;
 }
 h1{
-  font-size: 60px;
+  font-size: 50px;
 }
-.characterName{
-  font-size: 65px;
+.character-Name{
   color: #00B0C8;
     -webkit-text-stroke: 0.2px black;
       text-shadow: 4px 4px 14px white;

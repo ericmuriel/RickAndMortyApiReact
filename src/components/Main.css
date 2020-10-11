@@ -1,4 +1,4 @@
-.characterTitle {
+.character-Title {
   padding-top: 100px;
   font-size: 70px;
   color: #03adca;
@@ -15,25 +15,29 @@
 .info-container {
   padding-top: 80px;
   display: grid;
-  grid-template-columns: 800px 800px;
+  grid-template-columns: 650px 650px;
   grid-row: auto auto;
   grid-column-gap: 100px;
   grid-row-gap: 100px;
   text-align: left;
   justify-content: center;
 }
-.backgroundPage{
+
+.background-Page{
   background-image: linear-gradient(#94C82D,#00B0C8, #94C82D);
 }
-.nextPage,.previousPage{
+
+.next-Page,.previous-Page{
   font-size: 30px;
   padding-right: 30px;
   color: black;
 }
-.nextPage:hover,
+
+.next-Page:hover,
 .previousPage:hover {
 color: white;
 }
-.pagesContainer{
+
+.pages-Container{
   padding-bottom: 50px;
 }
